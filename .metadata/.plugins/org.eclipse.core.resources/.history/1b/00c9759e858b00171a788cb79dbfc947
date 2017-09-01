@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<div>
+			결혼여부<br/>
+			<input type="radio" name="married" value="Y" checked="checked">기혼
+			<input type="radio" name="married" value="N">미혼
+		</div>
+		<div>
+			결혼기념일<br/>
+			<input type="text" name="wedding"/>
+		</div>
+	</form>
+</body>
+</html>

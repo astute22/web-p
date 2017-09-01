@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>xml 데이터 처리</h1>
+	<p>
+		ajax 요청시 응답컨텐츠가 xml 데이터인 경우
+		xhr의 responseXML에 xml 데이터가 들어있음
+		
+		 xhr은 응답xml을 XML DOM 객체로 변환해서 responseXML에 저장
+		 
+		 XML DOM은 DOM 표준을 준수하기 떄문에 HTML DOM과 사용법이 거의 같음 
+	</p>
+	<p>
+	<button id="btn">xml 불러오기</button>
+	</p>
+</body>
+<script type="text/javascript">
+	document.getElementById("btn").addEventListener("click", function(event){
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if(xhr.readyState == 4 && xhr.status == 200){
+				
+			}
+		};
+		xhr.open("GET", "emp.do");
+		xhr.send(null);
+	});
+</script>
+</html>

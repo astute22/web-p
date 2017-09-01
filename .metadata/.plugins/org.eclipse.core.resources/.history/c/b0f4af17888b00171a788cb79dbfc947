@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function fn(el) {
+		console.log("checked : ", el.checked);
+		console.log("value : ", el.value);
+	}
+</script>
+</head>
+<body>
+	<form>
+		<div>
+			결혼여부<br/>
+			<input type="radio" name="married" value="Y" checked="checked" onchange="fn(this);">기혼
+			<input type="radio" name="married" value="N" onchange="fn(this);">미혼
+		</div>
+		<div>
+			결혼기념일<br/>
+			<input type="text" name="wedding"/>
+		</div>
+	</form>
+</body>
+</html>

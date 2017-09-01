@@ -1,0 +1,20 @@
+1502168708032	Move 2 resources to 'mappers'
+1502168713733	Move 'SqlMapConfig.xml' to 'ibatis'
+1502168822606	Delete element
+1502168927397	Rename package 'dao.ibatis.mappers'
+1502168957543	Delete element
+1502168979091	Delete element
+1502168980801	Delete element
+1502169002643	Delete element
+1502169019252	Copy file
+1502169032234	Copy file
+1502169199385	Rename resource 'Account.xml'
+1502176123761	Delete element
+1502329637510	Delete element
+1502329754355	Rename type 'StringUtil'
+1502346255088	Copy files
+1502346303191	Copy package
+1502346314388	Copy package
+1502346318320	Copy package
+1502346389885	Copy package
+1502346395375	Copy package

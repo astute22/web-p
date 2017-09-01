@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//이벤트처리
+	//이벤트 - 사용자가 보고 있는 html페이지에 일어나는 모든 일(클릭, 마우스 움직임, 드래그 등등)
+	//이벤트 핸들링 - 자바스크립트 이용해서 이벤트가 발생했을 때 실행할 코드를 정의하는 것
+	
+	//이벤트 처리 방법
+	//1. 
+	function menter() {
+		console.log("mouse enter");
+	}
+	function mleave() {
+		console.log("mouse leave");
+	}
+	function mover() {
+		console.log("mouse over");
+	}
+	function mout() {
+		console.log("mouse out");
+	}
+</script>
+<style>
+	div{margin: 50px; border: 1px solid black; padding: 50px;}
+</style>
+</head>
+<body>
+	<div onmouseenter="menter();" onmouseleave="mleave();">
+		<div></div>
+	</div>
+	<div onmouseover="mover();" onmouseout="mout();">
+		<div></div>
+	</div>
+</body>
+</html>

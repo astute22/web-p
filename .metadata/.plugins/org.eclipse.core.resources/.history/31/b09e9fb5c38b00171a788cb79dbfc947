@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div {margin: 15px;}
+	
+	label {
+		margin: 10px;
+		display: inline-block; 100px;
+		padding: 10px;
+		border: 1px solid silver;
+	}
+	
+	div.topics{
+		padding: 10px;
+		border: 1px solid silver;
+		font-size: 14px;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<label>뉴스</label>
+		<label>연예</label>
+		<label>스포츠</label>
+	</div>
+	<div>
+		<div class="topics" id="n-soc">
+			<p>강릉시 'KTX 시대 준비' 서울-원주-강릉 구간 12월 개통</p>
+			<p>北 발사체 정체는 탄도미사일..머쓱해진 청와대</p>
+			<p>文 "北 선넘는 도발·수도권 공격시 즉각 공세적 작전"</p>
+		</div>
+		<div class="topics" id="n-ent">
+			<p>"명복 빕니다" 윤종신·이승환·박기영, 故 조동진 애도</p>
+			<p>위태로운 박명수, 불편한 시청자..이대로는 곤란하다</p>
+			<p>'밤도깨비' 어색한 정형돈·이수근 관계부터 우선 정리해라</p>
+		</div>
+		<div class="topics">
+			<p>'박세웅-이정후 포함' 선동열호 예비엔트리 선발</p>
+			<p>'9월 방한' 베컴, "한국에 방문하게 돼 설렌다"</p>
+			<p>박성현 "상금랭킹 1위 얼떨떨..에비앙도 욕심 난다"</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	// label를 클릭하면 해당 토픽만 화면에 표시되게 하기
+</script>
+</html>

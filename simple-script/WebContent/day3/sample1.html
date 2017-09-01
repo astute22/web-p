@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//즉시 실행함수
+	//	-함수를 정의함과 동시에 실행
+	(function() {
+		//이 안에서 선언하는 변수는 로컬임, 전역X
+		console.log("즉시 실행 함수 실행");		
+	})();
+	
+	//즉시 실행 함수에 값 전달하기
+	(function(a,b) {
+		console.log(a,b);
+	})(10,20);
+	
+	//일반함수
+	function fn() {
+		console.log("나는 일반함수");
+	}
+	//일반함수 실행
+	fn();
+</script>
+</head>
+<body>
+
+</body>
+</html>

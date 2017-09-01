@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+	function mover(el) {
+		el.style.border="1px solid red";
+		el.style.opacity=1;
+	}
+	function mout(el) {
+		el.style.border= "1px solid silver";
+		el.style.opacity=0.5;
+	}
+</script>
+<style>
+	img { margin: 20px; opacity: 0.5;}
+</style>
+<body>
+	<div>
+		<img src="../image/a.jpg" onmouseover="mover(this);" onmouseout="mout(this);">
+		<img src="../image/a.jpg" onmouseover="mover(this);" onmouseout="mout(this);">
+		<img src="../image/a.jpg" onmouseover="mover(this);" onmouseout="mout(this);">
+		<img src="../image/a.jpg" onmouseover="mover(this);" onmouseout="mout(this);">
+	</div>
+</body>
+</html>

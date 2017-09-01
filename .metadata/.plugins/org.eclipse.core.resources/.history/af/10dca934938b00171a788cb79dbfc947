@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button id="btn">클릭</button>
+</body>
+<script type="text/javascript">
+	var myButton = document.getElementById("btn");
+	console.log(myButton);
+</script>
+</html>

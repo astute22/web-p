@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//자바스크립트 함수
+	//변수의 스코프
+	function fn1(){
+		console.log('y',y);
+		var x = 10;
+		if(x<100){
+			var y = x * 10;
+			console.log('y',y);
+		}
+		console.log('x',x);
+		console.log('y',y);
+	}
+	fn1();
+	function fn2(){
+		x=10;
+		console.log('x',x);
+		console.log('아기상어 뚜루루뚜루 귀여운 뚜루루뚜루 바닷속 뚜루루뚜루');
+		var x = 6;
+		console.log('x',x);
+	}
+	fn2();
+</script>
+</head>
+<body>
+
+</body>
+</html>

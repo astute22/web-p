@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//클로저(closure)
+	
+	function fn() {
+		//클로저함수가 참조하는 지역변수 value는 함수 fn의 실행이 완료된 이후에도 계속 유지된다
+		var value = 10;
+		
+		//클로저 함수
+		var fn2 = function() {
+			return value;
+		}
+		return fn2;
+	}
+	
+	//f는 클로저함수를 담고있는 외부존재
+	var f = fn();
+	
+	//x를 통해 클로저함수 실행->클로저함수가 참조하고 있는 fn의 지역변수 value에 접근할 수 있음
+	//함수 fn의 실행이 21번라인에서 왼료되었지만 지역변수 value는 사라지지않고 계속 유지됨
+	var x = f();
+	console.log(x);
+</script>
+</head>
+<body>
+
+</body>
+</html>

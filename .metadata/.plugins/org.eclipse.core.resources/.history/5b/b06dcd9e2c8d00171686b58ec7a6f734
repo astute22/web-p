@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>ajax practice</h1>
+	<p>ajax는 페이지 전체의 리로딩 없이 서버와 데이터 교환을 해서 화면의 일부분을 갱신하는 기술이다.</p>
+	<h3>ajax 프로그램 절차</h3>
+	<ol>
+		<li>XMLHttpRequest 객체 생성 : var xhr = new XMLHttpRequest();</li>
+		<li>XMLHttpRequest에 이벤트 핸들러 함수 등록하기 : 
+			xhr.onreadystatechange = function(){
+				xhr에서 응답 데이터 가져오기
+				응답데이터로 html태그 만들기
+				생성된 html태그를 화면에 붙이기
+			}</li>
+		<li>XMLHttpRequest 객체 초기화 : xhr.open('GET', 'data.do');</li>
+		<li>요청을 서버로 전송하기 : xhr.send(null);</li>
+		<li>응답을 처리하기 : xhr.processResponse();</li>
+	</ol>
+	
+	<p>
+		<button id="btn-ajax">데이터 가져오기</button>
+	</p>
+	<h3>유저목록</h3>
+	<ul id="user-list">	</ul>
+</body>
+<script type="text/javascript">
+	document.getElementById("btn-ajax").addEventListener('click',function(event) {
+		//1. xhr 객체 생성
+		var xhr = new XMLHttpRequest();
+		//4. xhr에 이밴트 핸들러 함수 등록
+		xhr.onreadystatechange = function(){
+			console.log('readyState',xhr.readyState);
+		};
+		//2. xhr 초기화
+		xhr.open("GET", "data.do");
+		//3. 서버로 요청 보내기
+		xhr.send(null);
+	});
+</script>
+</html>

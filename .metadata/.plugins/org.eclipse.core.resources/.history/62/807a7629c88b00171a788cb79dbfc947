@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#gallery-box img {
+		margin: 5px;
+		padding: 5px;
+		border: 1px solid silver;
+	}
+	label {
+		margin: 10px;
+		display: inline-block; 100px;
+		padding: 10px;
+		border: 1px solid silver;
+	}
+	.on {
+		display:block;
+	}
+	.off {
+		display:none;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<label>킬러의 보디가드</label>
+		<label>발레리안 : 천개행성의 도시</label>
+		<label>아토믹 블랜드</label>
+		<label>그것</label>
+		<label>리얼</label>
+	</div>
+	<div id="gallery-box">
+		<img src="../images/a.jpg" class="on"/>
+		<img src="../images/b.jpg" class="off"/>
+		<img src="../images/c.jpg" class="off"/>
+		<img src="../images/d.jpg" class="off"/>
+		<img src="../images/e.jpg" class="off"/>
+	</div>
+</body>
+<script type="text/javascript">
+	// label를 클릭하면 해당 영화의 포스트가 표시되도록 한다.
+	// <img> 태그의  class값을 변경해서 처리하시오.
+</script>
+</html>

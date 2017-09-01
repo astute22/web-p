@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>이름</th>
+				<th>국어</th>
+				<th>영어</th>
+				<th>수학</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="name">김유신</td><td class="score">100</td><td class="score">50</td><td class="score">60</td>
+			</tr>
+			<tr>
+				<td class="name">강감찬</td><td class="score">20</td><td class="score">30</td><td class="score">50</td>
+			</tr>
+			<tr>
+				<td class="name">이순신</td><td class="score">70</td><td class="score">80</td><td class="score">40</td>
+			</tr>
+			<tr>
+				<td class="name">홍길동</td><td class="score">30</td><td class="score">50</td><td class="score">50</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+<script type="text/javascript">
+	// 점수가 40점 미만인 td의 글자색을 빨간색으로 변경하기
+	(fn(){
+		var fields = document.getElementsByClassName("score");
+		for(var i = 0; i<fields.length;i++){
+			if(fields[i].value<40){
+				fields[i].value.style.color = 'red';
+			}
+		}
+	}());
+</script>
+</html>

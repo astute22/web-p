@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//자바스크립트의 연산자
+	
+	//산술연산자
+	//+ - * / % ++ --
+	
+	//대입연산자
+	//= += -= *= /= %=
+		
+	//비교연산자
+	//== != > >= < <= === !==
+	//연산 결과가 항상 true or false
+	
+	//== 같은지 비교, 타입이 달라도 변환시 같은값이면 true
+	console.log(5 == 5);	//true
+	console.log(5 == '5');	//true
+	//=== 같은지 비교, 타입과 값이 모두 같아야 true
+	console.log(5 === 5);	//true
+	console.log(5 === '5');	//false
+	
+	//!=	다른지 비교
+	console.log(5 != 8);	//true
+	console.log(5 != '5');	//false
+	console.log(5 != 5);	//false
+	//!==	다른지 비교, 값이 달라도 true, 타입이 달라도 true
+	console.log(5 !== 8);	//true
+	console.log(5 !== '5');	//true
+	console.log(5 !== 5);	//false
+	
+	//논리 연산자
+	//&& || !
+	
+	//운행거리
+	var distance = 12000;
+	//연식
+	var year = 3;
+	
+	var res = distance < 10000 || year < 5;
+	console.log('무상수리여부 : ', res)
+	
+	function copy(filename, directory){
+		directory = directory||'c:/download';
+		console.log(filename, directory);
+	}
+	
+	//삼항연산자
+	//(조건식)? 표현식1:표현식2
+</script>
+</head>
+<body>
+
+</body>
+</html>

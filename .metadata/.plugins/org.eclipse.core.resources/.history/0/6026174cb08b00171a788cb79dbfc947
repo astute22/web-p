@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+var names = ["살라","마네","피르미누","스터릿지"];
+names.forEach(function(item, index) {
+	console.log(item, index);
+})
+console.log(index)
+</script>
+<body>
+
+</body>
+</html>

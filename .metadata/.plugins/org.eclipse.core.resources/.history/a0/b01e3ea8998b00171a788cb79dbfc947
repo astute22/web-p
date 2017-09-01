@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="loginform" id="login-form" action="login.jsp">
+		id : <br/>
+		<input type="text" name="username" id="user-name" /><br/>
+		pw : <br/>
+		<input type="password" name="userpwd" id="user-pwd"/><br/>
+		<button type="submit">submit</button>
+	</form>
+</body>
+<script type="text/javascript">
+	var form = document.getElementById("login=form");
+	form.addEventListener('submit', function(event) {
+		
+	});
+</script>
+</html>

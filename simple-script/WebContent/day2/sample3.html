@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+	자바스크립트의 데이터 타입
+		number		-정수, 실수
+		string		-문자열
+		boolean		-true, false
+		undefined	-undefined
+		array		-배열
+		object		-객체
+		function	-함수
+		
+		boolean
+			참	true, "가", "  ", -1, 5, 56... 거짓을 제외한 전부
+			거짓	false, null, undefined, 0, '', NaN
+ */
+ // number 타입
+ var n1 = 10;	//정수
+ var n2 = 3.14;	//실수
+ 
+ // string 타입
+ var s1 = '홍길동';
+ var s2 = '스티븐 더 풋볼 제라드';
+ var s3 = "린가드";
+ 
+ // boolean 타입
+ var b1 = true;
+ var b2 = false;
+ var b3 = !0;
+ console.log(b3);
+ 
+ //array타입
+ var a1 = ['린가드','제라드','스콜스','램파드'];
+ var a2 = [4,10,26,31,64,0,-121];
+ console.log(a1);
+ console.log(a2);
+ console.log(a1.length);
+ console.log(a2.length);
+ console.log(a1[0]);
+ console.log(a1[5]);
+ 
+ var a3 = []	//빈 배열 생성
+ a3[0] = 'kbs';
+ a3[1] = 'mbc';
+ a3[2] = 'sbs';
+ a3[8] = 'jtbc';
+ 
+ console.log(a3);
+ 
+ //object타입		자바스크립트의 객체 (name/value의 쌍을 저장할수 있는 레이지타입) == 자바의 map
+ var o1 = {name:"제라드", age:40, email:"gerrard@gmail.com", addr:"리버풀"};
+ 
+ console.log(o1);
+ console.log(o1.name);
+ console.log(o1["email"]);
+ 
+ var o2 = {};	//빈 객체 생성
+ o2["kor"] = 70;
+ o2["eng"] = 90;
+ o2.math = 80;
+ o2.name = "민호우";
+ console.log(o2);
+ 
+ //function 타입
+ var f1 = function(){
+	 console.log("리버풀 챔스 우승");
+ };
+ 
+ var f2 = function(x){
+	 console.log("전달받은 값은" + x + "임");
+ };
+ 
+ var f3 = function(x,y,z){
+	 //arguments는 배열이다
+	 //arguments는 함수가 가지고있는 특별한 배열이다
+	 //arguments는 함수가 호출될 때 전달받은 값을 담고있는 배열이다.
+	 for(var i = 0; i<arguements.length;i++){
+		 console.log(arguments[i]);	 
+	 }
+ }
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//자바스크립트의 함수
+	//함수는 코드의 모음
+	//함수는 이벤트가 발생했을 때 실행할 코드를 함수로 만듦
+	//자바스크립트코드에서 자주 사용되는 코드를 함수로 만듦
+	//형식
+	/*
+		function 함수명(파라메터 변수명, 파라메터 변수명, ....){
+				실행코드;
+				실행코드;
+		}
+		function 함수명(파라메터 변수명, 파라메터 변수명, ....){
+				실행코드;
+				실행코드;
+				
+				return 값;
+		}
+	*/
+	
+	myfn(2,3);
+	function myfn(x, y){
+		var z = x+y;
+		console.log(z);
+	}
+	
+	var yourfn = function(x,y){
+		var z = x*y;
+		console.log(z);
+	}
+	yourfn(4,10);
+	
+	function fn() {
+		alert("실행됨!");
+	}
+	
+	function fn1(el) {
+		el.style.color="red";
+		console.log("마우스 포커스 들어옴");
+	}
+	
+	function fn2(el) {
+		el.style.color="gray";
+		console.log("마우스 포커스 나감");
+	}
+</script>
+</head>
+<body>
+	<button onclick="fn();" onmouseenter="fn1(this)" onmouseleave="fn2(this);">클릭해</button>
+</body>
+</html>

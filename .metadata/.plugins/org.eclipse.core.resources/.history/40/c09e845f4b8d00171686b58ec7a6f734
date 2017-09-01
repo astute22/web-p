@@ -1,0 +1,24 @@
+package demo2;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class BookDao {
+
+	private Map<Integer, Book> db = new HashMap<>();
+	
+	public BookDao(){
+		db.put(1, new Book(1,"드래곤라자","이영도","황금가지",8000,true));
+		db.put(2, new Book(2,"퓨쳐워커","이영도","황금가지",15000,true));
+		db.put(3, new Book(3,"더로그","홍정훈","자음과모음",8000,true));
+		db.put(4, new Book(4,"하얀늑대들","윤현승","디앤씨미디어",8000,true));
+		db.put(5, new Book(5,"드래곤레이디","김철곤","자음과모음",8000,true));
+		db.put(6, new Book(6,"눈물을마시는새","이영도","황금가지",15000,true));
+		db.put(7, new Book(7,"옥스타칼니스의 아이들","김민영","황금가지",8000,true));
+		db.put(8, new Book(8,"귀환병 이야기","이수영","황금가지",8000,true));
+		db.put(9, new Book(9,"룬의 아이들 윈터러","전민희","제우미디어",8000,true));
+		db.put(10, new Book(10,"얼음과 불의 노래","조지R.R.마틴","은행나무",15000,true));
+	}
+	
+	public 
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	a{
+		display: inline-black;
+		width: 150px;
+		padding: 10px;
+		border: 1px solid black;
+		text-decoration: none;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<a href="../image/a.jpg">킬러의 보디가드</a>
+		<a href="../image/b.jpg">발레리안 : 천개행성의 도시</a>
+		<a href="../image/c.jpg">아토믹 블론드</a>
+		<a href="../image/d.jpg">그-것</a>
+		<a href="../image/e.jpg">뤼얼</a>
+	</div>
+	<div>
+		<img alt="킬러의 보디가드 영화포스터" src="../image/a.jpg" id="photo-gallary">
+	</div>
+</body>
+<script type="text/javascript">
+	(function() {
+		var links = document.getElementsByTagName("a");
+		var linkArray = [];
+		for(var i=0; i<links.length; index++){
+			linkArray.push(links.item(i));
+		}
+		linkArray.forEach(function(item, index) {
+			item.addEventListener("click",function(){
+				var imgpath = item.getAttribute('href');
+				document.getElementById("photo-gallary").setAttribute("src",imgpath);
+			})
+		})
+	}())
+</script>
+</html>
