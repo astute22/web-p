@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Todo">
+	<select id="getTodos" resultClass="vo.Todo">
+		select TODO_NO as no
+			,TODO_TITLE as title
+			,TODO_DATES as dates
+			,TODO_CONTENTS as contents
+			,TODO_COMPLETED as completed
+		from tb_todo
+		where TODO_DELETED = 'N'
+		order by TODO_NO
+	</select>
+
+	<insert id="createTodo" parameterClass="vo.Todo">
+		insert into tb_todo
+		(TODO_NO, TODO_TITLE, TODO_DATES, TODO_CONTENTS)
+		values
+		(#no#, #title#, #dates#, #contents#)
+	</insert>
+
+	<select id="getTodo" parameterClass="int" resultClass="vo.Todo">
+		select TODO_NO as no
+			,TODO_TITLE as title
+			,TODO_DATES as dates
+			,TODO_CONTENTS as contents
+			,TODO_COMPLETED as completed
+		from tb_todo
+		where TODO_NO = #val#
+		and TODO_DELETED = 'N'
+	</select>
+	
+	<delete id="deleteTodo" parameterClass="int">
+		update tb_todo
+		set
+			TODO_DELETED = 'Y'
+		where TODO_NO = #val#
+	</delete>
+	<update id="completeTodo" parameterClass="int">
+		update tb_todo
+		set
+			TODO_COMPLETED = '예'
+		where
+			TODO_NO = #no#
+	</update>
+	<select id="getNo" resultClass="int">
+		SELECT todo_seq.nextval from dual
+	</select>
+
+</sqlMap>

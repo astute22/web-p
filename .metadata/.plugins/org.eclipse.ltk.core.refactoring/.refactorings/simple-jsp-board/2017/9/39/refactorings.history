@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;kr.co.jhta.board.dao&apos; to &apos;simple-jquery-demo/src&apos;&#x0D;&#x0A;- Original project: &apos;simple-jsp-board&apos;&#x0D;&#x0A;- Destination element: &apos;simple-jquery-demo/src&apos;&#x0D;&#x0A;- Original element: &apos;simple-jsp-board/src/kr.co.jhta.board.dao&apos;" description="Copy package" destination="=simple-jquery-demo/src" element1="/src&lt;kr.co.jhta.board.dao" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1506648700632" version="1.0"/>
+</session>

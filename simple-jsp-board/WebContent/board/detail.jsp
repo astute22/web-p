@@ -85,7 +85,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<form class="form-horizontal" method="post" action="addComment.jsp">
+		<form class="form-horizontal" method="post" action="addComment.jsp?crno=<%=no%>">
 			<input type="hidden" name="bno" value="<%=board.getNo() %>">
 			<div class="form=group">
 				<div class="col-sm-offset-1 col-sm-9">

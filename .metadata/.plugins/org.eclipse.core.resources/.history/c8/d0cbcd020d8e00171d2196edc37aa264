@@ -1,8 +1,0 @@
-package demo3;
-
-public class EmployeeXmlParser {
-
-	public static void main(String[] args) throws Exception{
-		
-	}
-}

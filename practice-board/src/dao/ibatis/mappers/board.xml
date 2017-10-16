@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Board">
+	<select id="getAllBoards" resultClass="vo.Board">
+		select board_no as no
+			,board_title as title
+			,board_writer as writer
+			,board_contents as contents
+			,board_createdate as createdate
+			,board_pno as pno
+		from tb_board2
+		order by board_pno desc ,board_no asc
+	</select>
+	
+	<insert id="addBoard" parameterClass="vo.Board">
+		insert into tb_board2
+		(BOARD_NO, BOARD_TITLE, BOARD_WRITER, BOARD_CONTENTS, BOARD_PNO,BOARD_CREATEDATE)
+		values
+		(#no#, #title#, #writer#, #contents#, #pno#,sysdate)
+	</insert>
+
+	<select id="getBoardByNo" parameterClass="int" resultClass="vo.Board">
+		select board_no as no
+			,board_title as title
+			,board_writer as writer
+			,board_contents as contents
+			,board_createdate as createdate
+			,board_pno as pno
+		from tb_board2
+		where board_no = #val#
+	</select>
+	
+	<select id="getBoardByPno" parameterClass="int" resultClass="vo.Board">
+		select board_no as no
+			,board_title as title
+			,board_writer as writer
+			,board_contents as contents
+			,board_createdate as createdate
+			,board_pno as pno
+		from tb_board2
+		where board_pno = #val#
+	</select>
+	<select id="getBoardNo" resultClass="int">
+		select board_seq.nextval from dual
+	</select>
+	<delete id="deleteBoardByNo" parameterClass="int">
+		delete from tb_board2
+		where board_no = #val#
+	</delete>
+	<update id="updateBoard" parameterClass="vo.Board">
+		update tb_board2
+		set
+			board_title = #title#,
+			board_writer = #writer#,
+			board_contents = #contents#
+		where
+			board_no = #no#
+	</update>
+
+</sqlMap>

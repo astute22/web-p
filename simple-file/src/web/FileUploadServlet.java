@@ -26,9 +26,19 @@ public class FileUploadServlet extends HttpServlet{
 		String summary = req.getParameter("summary");
 		System.out.println("설명 : " + summary);
 		
+		
 		Part part = req.getPart("f");
 		String filename = getFilename(part);
 		long fileSize = part.getSize();
+		String fType;
+		String contentDisposition = part.getHeader("content-disposition");
+		String[] items = contentDisposition.split(";");
+		for(String item : items){
+			if(item.trim().startsWith("filename")){
+				fType = item.substring(item.indexOf("=")+2, item.length());
+			}
+		}
+		
 		System.out.println(filename);
 		System.out.println(part.getContentType());
 		System.out.println(fileSize);
